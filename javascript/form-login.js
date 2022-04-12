@@ -7,6 +7,10 @@ pswd.value
 function validate() {
     let regexp1 = /^([A-Za-z0-9_\.-]{1,50})@([A-Za-z0-9\-]{2,70})\.([a-z]{2,6})(.[a-z]{2,3})?$/;
     let regexp2 = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
+
+    email_flag = 0;
+    pswd_flag = 0;
+    
     if (regexp1.test(email.value)) {
         email_flag = 1;
         // return true;

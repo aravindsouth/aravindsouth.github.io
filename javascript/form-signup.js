@@ -7,6 +7,11 @@ function validate() {
     let regexp2 = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/; // password
     let regexp3 = /^(\d{3})(\ )?(-)?(\.)?(\d{3})(\ )?(-)?(\.)?(\d{4})$/; // phone number
 
+    email_flag = 0;
+    pswd_flag = 0;
+    phone_flag = 0;
+    
+
     if (regexp1.test(email.value)) {
         email_flag = 1;
     }
