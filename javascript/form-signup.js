@@ -4,7 +4,8 @@ let phone = document.getElementById("inputPhone");
 let email_flag, pswd_flag, phone_flag;
 function validate() {
     let regexp1 = /^([A-Za-z0-9_\.-]{1,50})@([A-Za-z0-9\-]{2,70})\.([a-z]{2,6})(.[a-z]{2,3})?$/; // email
-    let regexp2 = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/; // password
+    // let regexp2 = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/; // password
+    let regexp2 = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{8,}$/; // password with special characters allowed
     let regexp3 = /^(\d{3})(\ )?(-)?(\.)?(\d{3})(\ )?(-)?(\.)?(\d{4})$/; // phone number
 
     email_flag = 0;
