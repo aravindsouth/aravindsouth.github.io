@@ -39,3 +39,12 @@ body {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+
+/* password strength and comparison messages */
+#message1 {
+  display: none;
+}
+
+#message2 {
+  display: none;
+}
